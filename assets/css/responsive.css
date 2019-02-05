@@ -1,0 +1,248 @@
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.column {width:750px}
+
+.photographer-search-bar {
+    margin-top: 110px;
+}
+.photographer-search-bar-text {
+    margin-bottom: 15px;
+}
+.photographer-content-heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.photographer-content-heading h2 {font-size: 20px;}
+.photographer-member-area {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.photographer-cover-image img {
+    height: auto;
+}
+.photographer-location {
+    width: 48%;
+    bottom: inherit;
+    left: 5px;
+    top: 5px;
+}
+.photographer-location p {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-bottom: 0;
+    line-height: normal;
+}
+.single-hotographer-rating {
+    bottom: inherit;
+    right: 5px;
+    padding: 2px 7px;
+    top: 5px;
+}
+.single-hotographer-rating i {
+    font-size: 10px;
+}
+.single-phogotrapher-name a h2 {
+    font-size: 19px;
+}
+.single-photographer-portfolio-link a {
+    font-size: 16px;
+}
+.single-photographer-portfolio-link {
+    padding-bottom: 25px;
+    margin-top: 6px;
+}
+.single-photographer-picture img {
+    height: 80px;
+    width: 80px;
+}
+.photographer-portfolio-area {
+    margin-top: 130px;
+}
+.photographer-portfolio-header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.photographer-profile-picture img {
+    width: 140px;
+    height: 140px;
+}
+.simplefavorite-button.has-count {
+    position: relative;
+    font-size: 14px;
+}
+.photographer-profile-name h2 {font-size:22px;}
+.photographer-profile-feedback-content {
+    width: 80%;
+}
+.photographer-profile-feedback-content div.owl-nav button i {
+    font-size: 20px;
+}
+
+}
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .photographer-search-bar-area {
+        background-color: #756a6a;
+    }
+    .photographer-search-bar {
+        margin-top: 120px;
+    }
+    .photographer-search-form form input {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+    .photographer-search-form form input[type="submit"] {
+        width:50%;color:#fff !important;
+    }
+    .photographer-search-bar-text h2 {
+        margin-bottom: 15px;
+        color: #fff !important;
+    }
+
+    /*-------------------------------
+    Photographer 
+    ---------------------------------*/
+    .photographer-content-heading h2 {
+    font-size: 18px;
+    }
+    .photographer-content-heading {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .photographer-member-area {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .photographer-cover-image img {
+        max-width: 100%;
+        height: auto;        
+    }
+    .photographer-location {
+        width: 35%;
+        bottom: 0;
+        left: 3px;
+        top: 3px;
+    }
+    .photographer-location p {
+        padding: 0px 8px;
+        font-size: 12px;
+    }
+    .single-hotographer-rating {
+        bottom: inherit;
+        right: 3px;
+        padding: 0px 5px;
+        top: 3px;
+    }
+    .single-hotographer-rating i {
+        font-size: 10px;
+    }
+    .single-photographer-picture img {
+        width: 70px;
+        height: 70px;
+    }
+    .single-phogotrapher-name a h2 {
+        font-size: 18px;
+    }
+    .single-photographer-portfolio-link a {
+        font-size: 15px;
+    }
+    .single-phogotrapher-name {
+        margin-left: 8px;
+        margin-bottom: 5px;
+        margin-right: 8px;
+        margin-top: 40px;
+    }
+    .single-photographer-portfolio-link {
+        padding-bottom: 20px;
+    }
+    .photographer-portfolio-area {
+        margin-top: 130px;
+    }
+    .photographer-portfolio-header {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .photographer-profile-picture {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .photographer-profile-name {
+        margin-right: 0;
+        text-align: center;
+    }
+    .photographer-profile-name h2 {font-size: 18px;}
+    .photographer-profile-name p {    font-size: 15px;
+        font-weight: bold;
+        font-style: italic;}
+    .photographer-profile-rating {
+        margin-top: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    .photographer-profile-review-link {
+        text-align: center;
+    }
+    .photographer-profile-description {
+        margin-top: 15px;
+    }
+    .photographer-profile-description p {text-align: justify;}
+    .photographer-profile-feedback-heading h2 {
+        font-size: 16px;
+    }
+    .photographer-profile-feedback {
+        margin-top: 20px;
+    }
+    .photographer-profile-feedback-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .photographer-profile-feedback-content div.owl-nav {
+        display: none;
+    }
+}
+
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+ 
+    .photographer-location {
+        left: 10px;
+        top: 10px;
+    }
+    .photographer-location p {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    .single-hotographer-rating {
+        bottom: inherit;
+        right: 10px;
+        padding: 4px 10px;
+        top: 10px;
+    }
+    .single-hotographer-rating i {
+        font-size: 12px;
+    }
+    .single-photographer-picture img {
+        width: 80px;
+        height: 80px;
+    }
+    .single-phogotrapher-name a h2 {
+        font-size: 20px;
+    }
+    .single-phogotrapher-name {
+        margin-top: 50px;
+    }
+    .single-photographer-portfolio-link a {
+        font-size: 17px;
+    }
+
+
+}    
