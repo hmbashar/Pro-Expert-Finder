@@ -1,25 +1,25 @@
 <?php 
 
-function wedAutoComplete() {
-    if(is_page_template('photographers.php')) {   
-        $photographer_lc = new WP_Query(array(
-            'post_type'         => 'photographer',
+function proExpertAutoComplete() {
+    if(is_page_template('proexpert.php')) {   
+        $pro_expert_loc = new WP_Query(array(
+            'post_type'         => 'pro-experts',
             'posts_per_page'    => -1
 
         ));
-        if($photographer_lc->have_posts()) { 
+        if($pro_expert_loc->have_posts()) { 
             
-            while($photographer_lc->have_posts()) { $photographer_lc->the_post();
-            $photogr_loc = get_post_meta(get_the_ID(), 'photographer-location', true);       
-                $photographer_loc_list[] = $photogr_loc;
+            while($pro_expert_loc->have_posts()) { $pro_expert_loc->the_post();
+            $pro_expert_loca_array = get_post_meta(get_the_ID(), 'pro-experts-location', true);       
+                $pro_expert_list[] = $pro_expert_loca_array;
             }
         }
 
-        $location_list = json_encode($photographer_loc_list);
+        $pro_location_list = json_encode($pro_expert_list);
 
-        wp_localize_script('wedding-autocomplete', 'photographer_location', array(
-            'photographer_locat'    => $location_list,
+        wp_localize_script('wp-pro-expert-autocomplete', 'pro_expert_location', array(
+            'pro_expert_locat'    => $pro_location_list,
         ));
     }
 }
-add_action('wp_enqueue_scripts', 'wedAutoComplete');
+add_action('wp_enqueue_scripts', 'proExpertAutoComplete');

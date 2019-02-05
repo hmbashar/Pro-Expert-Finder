@@ -3,56 +3,55 @@
 /**
  * Define the metabox and field configurations.
  */
-function weddingindustry_metabox_register() {
+function proExpert_metabox_register() {
 
 
 	/**
 	 * Initiate the metabox
 	 */
-	$photographer = new_cmb2_box( array(
-		'id'            => 'photographer_metabox_id',
-		'title'         => __( 'Photographer Extra Information', 'weddingindustry' ),
-		'object_types'  => array( 'photographer' ), // Post type
+	$pro_Experts = new_cmb2_box( array(
+		'id'            => 'pro_expert_metabox_id',
+		'title'         => __( 'Professional Extra Information', 'proexpert' ),
+		'object_types'  => array( 'pro-experts' ), // Post type
 		'context'       => 'normal',
 		'priority'      => 'high',
 		'show_names'    => true, // Show field names on the left
 	) );
 
 	// Regular text field
-	$photographer->add_field( array(
-		'name'       => __( 'Location', 'weddingindustry' ),
-		'desc'       => __( 'Please write this photographer location state/city', 'weddingindustry' ),
-		'id'         => 'photographer-location',
+	$pro_Experts->add_field( array(
+		'name'       => __( 'Location', 'proexpert' ),
+		'desc'       => __( 'Please write this professional expert location state/city', 'proexpert' ),
+		'id'         => 'pro-experts-location',
 		'type'       => 'text',
 	) );
 
 	// Regular text field
-	$photographer->add_field( array(
-		'name'       => __( 'Short Description', 'weddingindustry' ),
-		'desc'       => __( 'Please write something about this photographer', 'weddingindustry' ),
-		'id'         => 'photographer-short-desc',
+	$pro_Experts->add_field( array(
+		'name'       => __( 'Short Description', 'proexpert' ),
+		'desc'       => __( 'Please write something about this professional expert', 'proexpert' ),
+		'id'         => 'pro_expert-short-desc',
         'type'       => 'wysiwyg',
         'options' => array(
-
             'media_buttons' => false,
             'textarea_rows' => get_option('default_post_edit_rows', 5)
         ),
 	) );
 
 	// Regular text field
-	$photographer->add_field( array(
-		'name'       => __( 'Picture', 'weddingindustry' ),
-		'desc'       => __( 'Please upload your photographer profile picture, recommended dimension 200x200px', 'weddingindustry' ),
-		'id'         => 'photographer-profile-picture',
+	$pro_Experts->add_field( array(
+		'name'       => __( 'Picture', 'proexpert' ),
+		'desc'       => __( 'Please upload your professional expert profile picture, recommended dimension 200x200px', 'proexpert' ),
+		'id'         => 'professional-expert-profile-picture',
 		'type'       => 'file',
 	) );
 
 	/**
 	 * Initiate the metabox
 	 */
-	$photographer_review = new_cmb2_box( array(
-		'id'            => 'photographer_review_metabox_id',
-		'title'         => __( 'Photographer', 'weddingindustry' ),
+	$pro_expert_review = new_cmb2_box( array(
+		'id'            => 'pro_expert_review_metabox_id',
+		'title'         => __( 'Review For Professional Expert', 'proexpert' ),
 		'object_types'  => array( 'review' ), // Post type
 		'context'       => 'normal',
 		'priority'      => 'high',
@@ -60,23 +59,23 @@ function weddingindustry_metabox_register() {
 	) );
 
 	// Regular text field
-	$photographer_review->add_field( array(
-		'name'       => __( 'Select Photographer', 'weddingindustry' ),
-		'desc'       => __( 'Please select photographer, for whom this review?', 'weddingindustry' ),
-		'id'         => 'photographer_select_for_review',
+	$pro_expert_review->add_field( array(
+		'name'       => __( 'Select Expert', 'proexpert' ),
+		'desc'       => __( 'Please select professional expert, for whom this review?', 'proexpert' ),
+		'id'         => 'pro_expert_select_for_review',
         'type'       => 'select',
         'show_option_none' => true,
-        'options_cb' => 'wedding_photographer_list',
+        'options_cb' => 'pro_expert_photographer_list',
 	) );
 	
 
 	// Regular text field
-	$photographer_review->add_field( array(
-		'name'       => __( 'Photographer ID (Optional)', 'weddingindustry' ),
-		'desc'       => __( 'Please Input Photographer ID, If not\' found! Photographer in above the list, You can find the photographer id from photographer list after hover.', 'weddingindustry' ),
-		'id'         => 'photographer_unique_id',
+	$pro_expert_review->add_field( array(
+		'name'       => __( 'Pro Expert ID (Optional)', 'proexpert' ),
+		'desc'       => __( 'Please Input Pro Expert ID, If not\' found! Pro Expert in above the list, You can find the professional expert id from professional expert list after hover.', 'proexpert' ),
+		'id'         => 'pro_expert_unique_id',
         'type'       => 'text_small',
 	) );
 
 }
-add_action( 'cmb2_admin_init', 'weddingindustry_metabox_register' );
+add_action( 'cmb2_admin_init', 'proExpert_metabox_register' );
