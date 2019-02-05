@@ -1,10 +1,10 @@
 <?php
 /**
- * @package WP Developer Directory
+ * @package WP Pro Experts Finder
  */
 /*
-Plugin Name: WP Developer Directory
-Plugin URI: http://www.codingbank.com/plugins/wp-developer-directory
+Plugin Name: WP Pro Experts Finder
+Plugin URI: http://www.codingbank.com/plugins/pro-expert-finder
 Description: This Plugin for showing developer/member/photographer lists
 Version: 1.0
 Author: Md Abul Bashar
