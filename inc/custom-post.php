@@ -11,13 +11,13 @@ function proexpert_create_post_type() {
         register_post_type( 'pro-experts',
                 array(
                         'labels' => array(
-                                'name' => __( 'Pro Expert', 'proexpert' ),
+                                'name' => __( 'Pro Experts', 'proexpert' ),
                                 'singular_name' => __( 'Pro Expert', 'proexpert' ),
                                 'add_new' => __( 'Add New', 'proexpert' ),
                                 'add_new_item' => __( 'Add New Pro Expert', 'proexpert' ),
-                                'edit_item' => __( 'Edit Pro Expert', 'proexpert' ),
-                                'new_item' => __( 'New Pro Expert', 'proexpert' ),
-                                'view_item' => __( 'View Pro Expert', 'proexpert' ),
+                                'edit_item' => __( 'Edit Pro Experts', 'proexpert' ),
+                                'new_item' => __( 'New Pro Experts', 'proexpert' ),
+                                'view_item' => __( 'View Pro Experts', 'proexpert' ),
                                 'not_found' => __( 'Sorry, we couldn\'t find the Pro Expert you are looking for.', 'vision' ),
                                 'set_featured_image'    => __('Set Cover Image', 'proexpert'),
                                 // Overrides the “Remove featured image” label

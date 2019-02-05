@@ -66,3 +66,6 @@ add_filter('manage_pro-experts_posts_columns', 'posts_columns_id', 5);
 add_action('manage_pro-experts_posts_custom_column', 'posts_custom_id_columns', 5, 2);
 add_filter('manage_pro-experts_pages_columns', 'posts_columns_id', 5);
 add_action('manage_pro-experts_pages_custom_column', 'posts_custom_id_columns', 5, 2);   
+
+
+
