@@ -2,7 +2,7 @@
 /*
 Template Name: Pro Expert Finder
 */
-get_header();
+
 ?>
 <!--Pro Expert Finder Search Bar-->
 <section class="photographer-search-bar-area clearfix">
@@ -109,6 +109,3 @@ get_header();
         </div>
     </div>
 </section><!--/ Pro Expert Finder list area-->
-
-
-<?php get_footer(); ?>

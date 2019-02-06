@@ -60,3 +60,4 @@ require_once( WP_PRO_PLUGIN_DIR . 'inc/custom-post.php' );
 require_once( WP_PRO_PLUGIN_DIR . 'inc/autocomplete.php' );
 require_once( WP_PRO_PLUGIN_DIR . 'inc/metabox.php' );
 require_once( WP_PRO_PLUGIN_DIR . 'inc/functions.php' );
+require_once( WP_PRO_PLUGIN_DIR . 'inc/shortcodes.php' );
