@@ -12,6 +12,8 @@ function wp_pro_experts_template_shortcode($wp_niche){
 	), $wp_niche));
 ?>
 
+
+
 <!--Pro Expert Finder Search Bar-->
 <section class="photographer-search-bar-area clearfix">
     <div class="photographer-search-bar clearfix">
@@ -122,4 +124,34 @@ function wp_pro_experts_template_shortcode($wp_niche){
 	return ob_get_clean();
 	}
 add_shortcode( 'wp_pro_expers', 'wp_pro_experts_template_shortcode');
-	
+
+
+
+function Resume_template_shortcode($Pro_expert_template_one){ 
+    ob_start();
+    extract(shortcode_atts(array( 
+        'link'          => '',
+    ), $Pro_expert_template_one)); ?>
+
+        <section class="resume_area"> 
+            <h1>amar sonar bangla</h1>
+
+
+
+
+
+
+
+
+            
+        </section>
+
+
+
+
+
+<?php
+
+}
+
+add_shortcode('new_resume','Resume_template_shortcode');
