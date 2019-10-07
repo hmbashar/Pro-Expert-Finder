@@ -96,7 +96,7 @@ Template Name: Pro Expert Finder
 
                                     if($pro_experts->have_posts()) : while($pro_experts->have_posts()) : $pro_experts->the_post();  
                                    
-                                        get_template_part('inc/pro-expert-show');
+                                        require_once WP_PRO_PLUGIN_PATH.'inc/pro-expert-show.php';
                                     
                                     endwhile;endif;
                                 }                                

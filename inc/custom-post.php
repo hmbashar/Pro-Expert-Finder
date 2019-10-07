@@ -13,7 +13,7 @@ function proexpert_create_post_type() {
                         'labels' => array(
                                 'name' => __( 'Pro Experts', 'proexpert' ),
                                 'singular_name' => __( 'Pro Expert', 'proexpert' ),
-                                'add_new' => __( 'Add New', 'proexpert' ),
+                                'add_new' => __( 'Add New Expert', 'proexpert' ),
                                 'add_new_item' => __( 'Add New Pro Expert', 'proexpert' ),
                                 'edit_item' => __( 'Edit Pro Experts', 'proexpert' ),
                                 'new_item' => __( 'New Pro Experts', 'proexpert' ),
