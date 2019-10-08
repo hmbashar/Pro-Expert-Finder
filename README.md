@@ -1,2 +1,2 @@
-# wp-niche-product
+# Pro Expert Finder
 
