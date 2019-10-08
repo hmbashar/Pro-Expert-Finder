@@ -5,7 +5,6 @@
  */
 function proExpert_metabox_register() {
 
-
 	/**
 	 * Initiate the metabox
 	 */

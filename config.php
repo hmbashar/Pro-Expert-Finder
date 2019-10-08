@@ -33,8 +33,8 @@ define('WP_PRO_PLUGIN_DIR', plugin_dir_url( __FILE__ ));
 function wp_pro_expert_script_enqueues() {      
            
    if(is_page_template('proexpert.php')) {   
-       wp_enqueue_script( 'wp-pro-expert-autocomplete', WP_PRO_PLUGIN_DIR. '/js/my-autocomplete.js', array('jquery', 'jquery-ui-autocomplete'), true );
-       wp_enqueue_style( 'auto-complete-style', WP_PRO_PLUGIN_DIR.'/assets/css/jquery-ui.css' ); 
+       wp_enqueue_script( 'wp-pro-expert-autocomplete', WP_PRO_PLUGIN_DIR. 'js/my-autocomplete.js', array('jquery', 'jquery-ui-autocomplete'), true );
+       wp_enqueue_style( 'auto-complete-style', WP_PRO_PLUGIN_DIR.'assets/css/jquery-ui.css' ); 
    }
 
     // Font Awesome 5
@@ -58,9 +58,8 @@ add_action('wp_enqueue_scripts', 'wp_pro_expert_script_enqueues');
 
 
 require_once( WP_PRO_PLUGIN_PATH . 'inc/custom-post.php' );
-require_once( WP_PRO_PLUGIN_PATH . 'inc/autocomplete.php' );
+//require_once( WP_PRO_PLUGIN_PATH . 'inc/autocomplete.php' );
 require_once( WP_PRO_PLUGIN_PATH . 'inc/metabox.php' );
 require_once( WP_PRO_PLUGIN_PATH . 'inc/functions.php' );
-require_once( WP_PRO_PLUGIN_PATH . 'inc/shortcodes.php' );
 require_once( WP_PRO_PLUGIN_PATH . 'inc/taxonomy.php' );
 

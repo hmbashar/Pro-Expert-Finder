@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function($) {	
     
     pro_expert_location.pro_expert_locat;
