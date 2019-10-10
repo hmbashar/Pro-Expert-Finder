@@ -1,3 +1,97 @@
 /*
 * Project WP Developer Directory
 */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.pro-expert-finder-area{}
+.pro-expert-finder-form{
+    text-align: center;
+}
+.pro-expert-finder-form form{}
+.pro-expert-finder-form form input[type="text"]{
+    width: 50%;
+    display: inline-block;
+    border: 1px solid #3aafa9;
+}
+.pro-expert-finder-form form input[type="submit"]{
+    padding: 17px 30px;
+    background: #2b7a78;
+    text-transform: uppercase;
+}
+.pro-expert-finder-photographer{
+    margin-top: 50px;
+}
+
+.pro-expert-finder-title{text-align: center;}
+.pro-expert-finder-title h2{
+    font-weight: 600;
+    color: #333 !important;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.single-pro-expert-photographer:hover .single-pro-expert-social{left:0; transition: 1s; }
+
+.single-pro-expert-photographer{box-shadow: 0 2px 25px 0 rgba(0,0,0,.15);overflow: hidden;}
+.pro-expert-photographer-cover-photo{}
+.pro-expert-photographer-cover-photo img{width:100%;max-height: 250px;}
+.pro-expert-photographer-client{
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+}
+.pro-expert-photographer-full-thumb{
+    position: relative;
+}
+.pro-expert-photographer-category p{margin:0;font-size: 16px;color: #fff;}
+.pro-expert-photographer-category{
+    background-color: #2b7a78;
+    padding: 10px 0px;
+    border-radius: 2px;
+    text-align: center;
+}
+.pro-expert-photographer-img{text-align: center;}
+.pro-expert-photographer-img img{max-width: 100%;width: 100px;height: 100px;border-radius: 100px;border: 2px solid #3aafa9;padding: 1px;margin-top: -14px;}
+.pro-expert-photographer-review{
+    background-color: #2b7a78;
+    padding: 10px 0px;
+    border-radius: 2px;
+    text-align: center;
+}
+.pro-expert-photographer-review i{color:#fff;font-size: 16px;}
+.pro-expert-finder-author-title{
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.pro-expert-finder-author-title a:hover{color:#2b7a78; border-bottom:1px solid #2b7a78;}
+.pro-expert-finder-author-title a{
+    color: #3aafa9;
+    text-decoration: none;
+}
+.pro-expert-finder-author-title a h2{
+    color: #2b7a78;
+    font-weight: 700;
+    font-size: 20px;
+}
+.single-pro-expert-social a{text-decoration:none;}
+.single-pro-expert-social{
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    text-align: center;
+    background: #2b7a78;
+    padding: 10px;
+}
+.single-pro-expert-social i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 20px;
+}
+
