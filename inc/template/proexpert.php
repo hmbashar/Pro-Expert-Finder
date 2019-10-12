@@ -24,7 +24,7 @@ get_header();  ?>
 			</div>
 			<div class="row">
 				<!-- single photographer finder -->
-				<div class="col-xl-4 col-md-4">
+				<div class="col-md-4">
 					<div class="single-pro-expert-photographer">
 						<div class="pro-expert-photographer-full-thumb">
 							<div class="pro-expert-photographer-cover-photo">
@@ -75,7 +75,7 @@ get_header();  ?>
 				</div>
 				<!--/ single photographer finder -->
 				<!-- single photographer finder -->
-				<div class="col-xl-4 col-md-4">
+				<div class="col-md-4">
 					<div class="single-pro-expert-photographer">
 						<div class="pro-expert-photographer-full-thumb">
 							<div class="pro-expert-photographer-cover-photo">
@@ -126,7 +126,7 @@ get_header();  ?>
 				</div>
 				<!--/ single photographer finder -->
 				<!-- single photographer finder -->
-				<div class="col-xl-4 col-md-4">
+				<div class="col-md-4">
 					<div class="single-pro-expert-photographer">
 						<div class="pro-expert-photographer-full-thumb">
 							<div class="pro-expert-photographer-cover-photo">

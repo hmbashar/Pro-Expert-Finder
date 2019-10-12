@@ -40,7 +40,7 @@ function wp_pro_expert_script_enqueues() {
     // Font Awesome 5
     wp_enqueue_style( 'font-awesome-5', '//use.fontawesome.com/releases/v5.7.1/css/all.css', NULL, WP_PRO_EXPERT_VERSION);    
     // Bootstrap 4 Grid
-    wp_enqueue_style( 'bootstrap-grids', WP_PRO_PLUGIN_DIR.'assets/css/bootstrap.grids.min.css', NULL, WP_PRO_EXPERT_VERSION);
+    wp_enqueue_style( 'bootstrap-grids', WP_PRO_PLUGIN_DIR.'assets/css/bootstrap.min.css', NULL, WP_PRO_EXPERT_VERSION);
       // Owl Carousel 2
     wp_enqueue_style( 'owl-carousel', WP_PRO_PLUGIN_DIR.'assets/css/owl.carousel.min.css', NULL, WP_PRO_EXPERT_VERSION);
       // Plugin Main Design
