@@ -1,4 +1,29 @@
 (function($) {
+
+
+
+// magnificPopup
+
+ $('.video-view').magnificPopup({
+  type: 'iframe',
+
+});
+
+
+
+var mixer = mixitup('.nayon_mixetups');
+
+
+
+
+
+
+
+
+
+
+
+  
     "use strict";    
     $(document).ready(function(){
         
@@ -25,5 +50,16 @@
             nav: true,
             navText: ['<i class="fas fa-less-than"></i>', '<i class="fas fa-greater-than"></i>'],
         });
+
+
+
+
+
+
+
+
+
+
+
     });    
 })(jQuery);

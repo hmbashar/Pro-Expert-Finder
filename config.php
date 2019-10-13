@@ -43,13 +43,17 @@ function wp_pro_expert_script_enqueues() {
     wp_enqueue_style( 'bootstrap-grids', WP_PRO_PLUGIN_DIR.'assets/css/bootstrap.min.css', NULL, WP_PRO_EXPERT_VERSION);
       // Owl Carousel 2
     wp_enqueue_style( 'owl-carousel', WP_PRO_PLUGIN_DIR.'assets/css/owl.carousel.min.css', NULL, WP_PRO_EXPERT_VERSION);
+      // Magnific-Popup
+    wp_enqueue_style( 'magnific-popup', WP_PRO_PLUGIN_DIR.'assets/css/magnific-popup.css', NULL, WP_PRO_EXPERT_VERSION);
       // Plugin Main Design
     wp_enqueue_style( 'wp-pro-expert-style', WP_PRO_PLUGIN_DIR.'assets/css/style.css', NULL, WP_PRO_EXPERT_VERSION);
     // Plugin Main Responsive
     wp_enqueue_style( 'wp-pro-expert-responsive-style', WP_PRO_PLUGIN_DIR.'assets/css/responsive.css', NULL, WP_PRO_EXPERT_VERSION);
-
     // Owl Carousel 
     wp_enqueue_script( 'owl-carousel', WP_PRO_PLUGIN_DIR.'assets/js/owl.carousel.min.js', array('jquery'), true );
+    // jquery.Magnific-Popup
+    wp_enqueue_script( 'magnific-popup-js', WP_PRO_PLUGIN_DIR.'assets/js/jquery.magnific-popup.min.js', array('jquery'), true );
+
     wp_enqueue_script( 'wp-pro-expert-custom', WP_PRO_PLUGIN_DIR.'assets/js/custom.js', array('jquery'), true );
 }
 
