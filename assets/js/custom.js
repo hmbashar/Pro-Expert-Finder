@@ -1,31 +1,36 @@
 (function($) {
-
+   "use strict";  
 
 
 // magnificPopup
 
- $('.video-view').magnificPopup({
-  type: 'iframe',
-
-});
-
-
-
-var mixer = mixitup('.nayon_mixetups');
 
 
 
 
-
-
-
-
-
-
-
-  
-    "use strict";    
     $(document).ready(function(){
+
+
+var mixer = mixitup('.focal-portfolio-mix');
+
+
+      $('.focal-slider-content').owlCarousel({
+          loop:true,
+          items: 1,
+          autoplay : true,
+
+
+      });
+
+      $('.focal-client-area').owlCarousel({
+          loop:true,
+          items: 1,
+          autoplay : true,
+
+
+      });
+
+
         
         // Photographer top to bottom scroll
         $(".see_photo_review").on('click', function(event) {

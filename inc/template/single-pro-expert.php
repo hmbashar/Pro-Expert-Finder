@@ -4,11 +4,38 @@ get_header(); ?>
 
 <section class="focal-slider-section">
 	<div class="focal-slider-area">
-		<div class="container">
-			<div class="focal-slide-content">
-				<h2>Web & Graphic Designer</h2>
-				<a href="">Learn More</a>
+		<div class="focal-slider-content owl-carousel">
+			
+			<!-- single sliders start -->
+			<div class="focal-single-slide-content">
+				<div class="focal-single-slide-img">
+					<img src="<?php echo WP_PRO_PLUGIN_DIR; ?>/assets/images/pro-experts-single-page-main-slider.jpg" alt="">
+				</div>
+				<div class="focal-single-slide-name">
+					<div class="focal-single-slide-title">
+						<h2>Web & Graphic Designer</h2>						
+					</div>
+					<div class="focal-single-slide-more">
+						<a href="">Learn More</a>				
+					</div>						
+				</div>
 			</div>
+			<!-- single sliders Ends -->			
+			<!-- single sliders start -->
+			<div class="focal-single-slide-content">
+				<div class="focal-single-slide-img">
+					<img src="<?php echo WP_PRO_PLUGIN_DIR; ?>/assets/images/pro-experts-single-page-main-slider.jpg" alt="">
+				</div>
+				<div class="focal-single-slide-name">
+					<div class="focal-single-slide-title">
+						<h2>Web & Graphic Designer</h2>						
+					</div>
+					<div class="focal-single-slide-more">
+						<a href="">Learn More</a>				
+					</div>						
+				</div>
+			</div>
+			<!-- single sliders Ends -->
 		</div>
 	</div>
 </section>
@@ -76,7 +103,7 @@ get_header(); ?>
 	<div class="focal-about-me">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xl-5">
+				<div class="col-xl-5 pl-0">
 					<div class="focal-about-left-images">
 						<img src="<?php echo WP_PRO_PLUGIN_DIR; ?>/assets/images/pro-experts-client-img.png" alt="">
 					</div>
@@ -167,27 +194,27 @@ get_header(); ?>
 
 
 				<div class="focal-single-progressbar">
-					<h4>Web design</h4>
+					<h4>Photoshop</h4>
 					<div class="progress">
-					  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					  <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 				</div>
 				<div class="focal-single-progressbar">
-					<h4>Web design</h4>
+					<h4>Illustrator</h4>
 					<div class="progress">
-					  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					  <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 				</div>
 				<div class="focal-single-progressbar">
-					<h4>Web design</h4>
+					<h4>HTML/CSS</h4>
 					<div class="progress">
-					  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					  <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 				</div>
 				<div class="focal-single-progressbar">
-					<h4>Web design</h4>
+					<h4>PHP/MYSQL</h4>
 					<div class="progress">
-					  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					  <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 				</div>
 
@@ -225,7 +252,7 @@ get_header(); ?>
 						<div class="focal-single-experince-right-post">
 							<div class="single-experince-right-post-title">
 								<h2>Graphic Design Diploma</h2>
-								<p>Reeves College  /<span>June 2008 - May 2010</span> </p>
+								<p> <strong>Reeves College  / </strong>June 2008 - May 2010 </p>
 								<a href="#">4.0 GPA</a>
 							</div>
 							<div class="single-experince-right-post-content">
@@ -237,7 +264,7 @@ get_header(); ?>
 						<div class="focal-single-experince-right-post">
 							<div class="single-experince-right-post-title">
 								<h2>Graphic Design Diploma</h2>
-								<p>Reeves College  /<span>June 2008 - May 2010</span> </p>
+								<p> <strong>Reeves College  / </strong>June 2008 - May 2010 </p>
 								<a href="#">4.0 GPA</a>
 							</div>
 							<div class="single-experince-right-post-content">
@@ -266,7 +293,7 @@ get_header(); ?>
 						<div class="focal-single-experince-right-post">
 							<div class="single-experince-right-post-title">
 								<h2>Graphic Design Diploma</h2>
-								<p>Reeves College  /<span>June 2008 - May 2010</span> </p>
+								<p> <strong>Reeves College  / </strong>June 2008 - May 2010 </p>
 								<a href="#">4.0 GPA</a>
 							</div>
 							<div class="single-experince-right-post-content">
@@ -278,7 +305,7 @@ get_header(); ?>
 						<div class="focal-single-experince-right-post">
 							<div class="single-experince-right-post-title">
 								<h2>Graphic Design Diploma</h2>
-								<p>Reeves College  /<span>June 2008 - May 2010</span> </p>
+								<p> <strong>Reeves College  / </strong>June 2008 - May 2010 </p>
 								<a href="#">4.0 GPA</a>
 							</div>
 							<div class="single-experince-right-post-content">
@@ -297,7 +324,13 @@ get_header(); ?>
 
 <section class="focal-client-area-section">
 	<div class="container">
-		<div class="focal-client-area">
+		<div class="focal-client-area owl-carousel">
+
+			<div class="single-focal-client">
+				<p>“Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.”</p>
+				<h3>John Stone</h3>
+			</div>
+
 			<div class="single-focal-client">
 				<p>“Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.”</p>
 				<h3>John Stone</h3>
@@ -313,115 +346,118 @@ get_header(); ?>
 				<p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
 			</div>
 			<div class="focal-portfoio-mixetup-area">
-				<div class="row">
+
+				<div class="row focal-portfolio-mix">
+
 					<!-- single portfolio item start -->
-					<div class="col-xl-4">
-						<div class="single-portfolio-filter-cat">
+					<div class="col-xl-4 single-portfolio-filter-cat">
+					
 							<div class="portfolio-filter-title">
 								<h2>Filter By Category</h2>
-								<ul>
-									<li><a href="">all</a></li>
-									<li><a href="">themes</a></li>
-									<li><a href="">icons</a></li>
-									<li><a href="">patterms</a></li>
-									<li><a href="">ui kits</a></li>
+								
+								<ul class="ul-area">
+									<li data-filter="*">all</li>
+									<li data-filter=".themes">themes</li>
+									<li data-filter=".icons">icons</li>
+									<li data-filter=".patterms">patterms</li>
+									<li data-filter=".kits">ui kits</li>
 								</ul>
 							</div>
-						</div>
 					</div>
 					<!-- single portfolio item ends -->
+
 					<!-- single portfolio item start -->
-					<div class="col-xl-4">
+					<div class="col-xl-4 mix themes">
 						<div class="single-portfolio-item">
 							<div class="single-portfolio-item-thumb">
 								<img src="<?php echo WP_PRO_PLUGIN_DIR; ?>/assets/images/pro-expert-mixetup-img01.png" alt="">
 							</div>
 							<div class="single-portfolio-item-view">
-								<i class="fas fa-search"></i>
+								<a href=""><i class="fas fa-search"></i></a>
 							</div>
 						</div>
 					</div>
 					<!-- single portfolio item ends -->
 					<!-- single portfolio item start -->
-					<div class="col-xl-4">
+					<div class="col-xl-4 mix icons">
 						<div class="single-portfolio-item">
 							<div class="single-portfolio-item-thumb">
 								<img src="<?php echo WP_PRO_PLUGIN_DIR; ?>/assets/images/pro-expert-mixetup-img01.png" alt="">
 							</div>
 							<div class="single-portfolio-item-view">
-								<i class="fas fa-search"></i>
+								<a href=""><i class="fas fa-search"></i></a>
 							</div>
 						</div>
 					</div>
 					<!-- single portfolio item ends -->
 					<!-- single portfolio item start -->
-					<div class="col-xl-4">
+					<div class="col-xl-4 mix patterms">
 						<div class="single-portfolio-item">
 							<div class="single-portfolio-item-thumb">
 								<img src="<?php echo WP_PRO_PLUGIN_DIR; ?>/assets/images/pro-expert-mixetup-img01.png" alt="">
 							</div>
 							<div class="single-portfolio-item-view">
-								<i class="fas fa-search"></i>
+								<a href=""><i class="fas fa-search"></i></a>
 							</div>
 						</div>
 					</div>
 					<!-- single portfolio item ends -->
 					<!-- single portfolio item start -->
-					<div class="col-xl-4">
+					<div class="col-xl-4 mix themes">
 						<div class="single-portfolio-item">
 							<div class="single-portfolio-item-thumb">
 								<img src="<?php echo WP_PRO_PLUGIN_DIR; ?>/assets/images/pro-expert-mixetup-img01.png" alt="">
 							</div>
 							<div class="single-portfolio-item-view">
-								<i class="fas fa-search"></i>
+								<a href=""><i class="fas fa-search"></i></a>
 							</div>
 						</div>
 					</div>
 					<!-- single portfolio item ends -->
 					<!-- single portfolio item start -->
-					<div class="col-xl-4">
+					<div class="col-xl-4 mix icons">
 						<div class="single-portfolio-item">
 							<div class="single-portfolio-item-thumb">
 								<img src="<?php echo WP_PRO_PLUGIN_DIR; ?>/assets/images/pro-expert-mixetup-img01.png" alt="">
 							</div>
 							<div class="single-portfolio-item-view">
-								<i class="fas fa-search"></i>
+								<a href=""><i class="fas fa-search"></i></a>
 							</div>
 						</div>
 					</div>
 					<!-- single portfolio item ends -->
 					<!-- single portfolio item start -->
-					<div class="col-xl-4">
+					<div class="col-xl-4 mix patterms">
 						<div class="single-portfolio-item">
 							<div class="single-portfolio-item-thumb">
 								<img src="<?php echo WP_PRO_PLUGIN_DIR; ?>/assets/images/pro-expert-mixetup-img01.png" alt="">
 							</div>
 							<div class="single-portfolio-item-view">
-								<i class="fas fa-search"></i>
+								<a href=""><i class="fas fa-search"></i></a>
 							</div>
 						</div>
 					</div>
 					<!-- single portfolio item ends -->
 					<!-- single portfolio item start -->
-					<div class="col-xl-4">
+					<div class="col-xl-4 mix kits">
 						<div class="single-portfolio-item">
 							<div class="single-portfolio-item-thumb">
 								<img src="<?php echo WP_PRO_PLUGIN_DIR; ?>/assets/images/pro-expert-mixetup-img01.png" alt="">
 							</div>
 							<div class="single-portfolio-item-view">
-								<i class="fas fa-search"></i>
+								<a href=""><i class="fas fa-search"></i></a>
 							</div>
 						</div>
 					</div>
 					<!-- single portfolio item ends -->
 					<!-- single portfolio item start -->
-					<div class="col-xl-4">
+					<div class="col-xl-4 mix themes">
 						<div class="single-portfolio-item">
 							<div class="single-portfolio-item-thumb">
 								<img src="<?php echo WP_PRO_PLUGIN_DIR; ?>/assets/images/pro-expert-mixetup-img01.png" alt="">
 							</div>
 							<div class="single-portfolio-item-view">
-								<i class="fas fa-search"></i>
+								<a href=""><i class="fas fa-search"></i></a>
 							</div>
 						</div>
 					</div>
@@ -444,8 +480,8 @@ get_header(); ?>
 
 						<p>122 33rd Street East Saskatoon, SK S7K 1R9</p>
 
-						<p><span>Email:</span>admin@admin.com</p>
-						<p><span>Phone:</span>01771498844</p>
+						<p><strong>Email:</strong>admin@admin.com</p>
+						<p><strong>Phone:</strong>01771498844</p>
 
 					</div>
 				</div>
@@ -466,7 +502,7 @@ get_header(); ?>
 								   	<textarea name="" id="" cols="30" rows="10"></textarea>
 								  </div>
 
-								  <button type="submit" class="btn btn-primary">Contact Me</button>
+								  <input type="submit" value="Contact Me">
 							</form>
 						</div>
 					</div>
@@ -483,47 +519,29 @@ get_header(); ?>
 				<div class="focal-footer-copyright-social">
 
 					<div class="focal-single-footer-social">
-						<i class="fas fa-search"></i>
+						<a href=""><i class="fab fa-facebook-f"></i></a>
 					</div>
 					<div class="focal-single-footer-social">
-						<i class="fas fa-search"></i>
+						<a href=""><i class="fab fa-twitter"></i></a>
 					</div>
 					<div class="focal-single-footer-social">
-						<i class="fas fa-search"></i>
+						<a href=""><i class="fab fa-linkedin-in"></i></a>
 					</div>
 					<div class="focal-single-footer-social">
-						<i class="fas fa-search"></i>
+						<a href=""><i class="fab fa-pinterest-p"></i></a>
 					</div>
 					<div class="focal-single-footer-social">
-						<i class="fas fa-search"></i>
+						<a href=""><i class="fab fa-google-plus-g"></i></a>
 					</div>
 					<div class="focal-single-footer-social">
-						<i class="fas fa-search"></i>
+						<a href=""><i class="fab fa-dribbble"></i></a>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
 	</div>
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
