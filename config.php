@@ -38,18 +38,23 @@ function wp_pro_expert_script_enqueues() {
    }
 
     // Font Awesome 5
-    wp_enqueue_style( 'font-awesome-5', '//use.fontawesome.com/releases/v5.7.1/css/all.css', NULL, WP_PRO_EXPERT_VERSION);    
+    wp_enqueue_style( 'font-awesome-5', '//use.fontawesome.com/releases/v5.7.1/css/all.css', NULL, WP_PRO_EXPERT_VERSION);   
+    wp_enqueue_style( 'google-font', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap', NULL, WP_PRO_EXPERT_VERSION);   
+
+
     // Bootstrap 4 Grid
-    wp_enqueue_style( 'bootstrap-grids', WP_PRO_PLUGIN_DIR.'assets/css/bootstrap.grids.min.css', NULL, WP_PRO_EXPERT_VERSION);
+    wp_enqueue_style( 'bootstrap-grids', WP_PRO_PLUGIN_DIR.'assets/css/bootstrap.min.css', NULL, WP_PRO_EXPERT_VERSION);
       // Owl Carousel 2
     wp_enqueue_style( 'owl-carousel', WP_PRO_PLUGIN_DIR.'assets/css/owl.carousel.min.css', NULL, WP_PRO_EXPERT_VERSION);
       // Plugin Main Design
     wp_enqueue_style( 'wp-pro-expert-style', WP_PRO_PLUGIN_DIR.'assets/css/style.css', NULL, WP_PRO_EXPERT_VERSION);
     // Plugin Main Responsive
     wp_enqueue_style( 'wp-pro-expert-responsive-style', WP_PRO_PLUGIN_DIR.'assets/css/responsive.css', NULL, WP_PRO_EXPERT_VERSION);
-
     // Owl Carousel 
-    wp_enqueue_script( 'owl-carousel', WP_PRO_PLUGIN_DIR.'assets/js/owl.carousel.min.js', array('jquery'), true );
+    wp_enqueue_script( 'owl-carousel', WP_PRO_PLUGIN_DIR.'assets/js/owl.carousel.min.js', array('jquery'), 2.3, true );
+    // jquery.Magnific-Popup
+    wp_enqueue_script( 'mixitup-js', WP_PRO_PLUGIN_DIR.'assets/js/mixitup.min.js', array('jquery'), 3.2, true );
+
     wp_enqueue_script( 'wp-pro-expert-custom', WP_PRO_PLUGIN_DIR.'assets/js/custom.js', array('jquery'), true );
 }
 
