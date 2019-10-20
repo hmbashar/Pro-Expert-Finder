@@ -30,7 +30,16 @@ define( 'WP_PRO_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define('WP_PRO_PLUGIN_DIR', plugin_dir_url( __FILE__ ));
 
 
-function wp_pro_expert_script_enqueues() {      
+function pro_expert_finder_general() {
+
+  load_plugin_textdomain( 'proexpert', false, WP_PRO_PLUGIN_PATH.'lang' );
+
+}
+add_action('after_setup_theme', 'pro_expert_finder_general');
+
+//Expert Pro Finder
+function pro_expert_finder_script_enqueues() {      
+
            
    if(is_page_template('proexpert.php')) {   
        wp_enqueue_script( 'wp-pro-expert-autocomplete', WP_PRO_PLUGIN_DIR. 'js/my-autocomplete.js', array('jquery', 'jquery-ui-autocomplete'), true );
@@ -43,7 +52,7 @@ function wp_pro_expert_script_enqueues() {
 
 
     // Bootstrap 4 Grid
-    wp_enqueue_style( 'bootstrap-grids', WP_PRO_PLUGIN_DIR.'assets/css/bootstrap.min.css', NULL, WP_PRO_EXPERT_VERSION);
+    wp_enqueue_style( 'bootstrap-grids', WP_PRO_PLUGIN_DIR.'assets/css/bootstrap-grid.min.css', NULL, WP_PRO_EXPERT_VERSION);
       // Owl Carousel 2
     wp_enqueue_style( 'owl-carousel', WP_PRO_PLUGIN_DIR.'assets/css/owl.carousel.min.css', NULL, WP_PRO_EXPERT_VERSION);
       // Plugin Main Design
@@ -58,13 +67,15 @@ function wp_pro_expert_script_enqueues() {
     wp_enqueue_script( 'wp-pro-expert-custom', WP_PRO_PLUGIN_DIR.'assets/js/custom.js', array('jquery'), true );
 }
 
-add_action('wp_enqueue_scripts', 'wp_pro_expert_script_enqueues');
+add_action('wp_enqueue_scripts', 'pro_expert_finder_script_enqueues');
 
 
 
 require_once( WP_PRO_PLUGIN_PATH . 'inc/custom-post.php' );
 //require_once( WP_PRO_PLUGIN_PATH . 'inc/autocomplete.php' );
-require_once( WP_PRO_PLUGIN_PATH . 'inc/metabox.php' );
 require_once( WP_PRO_PLUGIN_PATH . 'inc/functions.php' );
 require_once( WP_PRO_PLUGIN_PATH . 'inc/taxonomy.php' );
+require_once( WP_PRO_PLUGIN_PATH . 'inc/libs/class-tgm-plugin-activation.php' );
+require_once( WP_PRO_PLUGIN_PATH . 'inc/libs/tgm-configuration.php' );
+require_once( WP_PRO_PLUGIN_PATH . 'inc/libs/custom-fields.php' );
 

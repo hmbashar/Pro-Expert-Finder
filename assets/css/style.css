@@ -34,7 +34,7 @@
 }
 .single-pro-expert-photographer:hover .single-pro-expert-social{left:0; transition: 1s; }
 
-.single-pro-expert-photographer{box-shadow: 0 2px 25px 0 rgba(0,0,0,.15);overflow: hidden;}
+.single-pro-expert-photographer{box-shadow: 0 2px 25px 0 rgba(0,0,0,.15);overflow: hidden;margin-bottom: 30px;}
 .pro-expert-photographer-cover-photo{}
 .pro-expert-photographer-cover-photo img{width:100%;max-height: 250px;}
 .pro-expert-photographer-client{

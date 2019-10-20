@@ -12,7 +12,7 @@ add_action('after_setup_theme', 'pro_expert_basic_action');
  * @param  array $query_args Optional. Overrides defaults.
  * @return array             An array of options that matches the CMB2 options array
  */
-function pro_experts_list_in_review( $query_args ) {
+function pro_experts_finder_list_in_review( $query_args ) {
 
 	$args = wp_parse_args( $query_args, array(
 		'post_type'   => 'pro-experts',
@@ -35,8 +35,8 @@ function pro_experts_list_in_review( $query_args ) {
  * Gets 5 posts for your_post_type and displays them as options
  * @return array An array of options that matches the CMB2 options array
  */
-function pro_expert_photographer_list() {
-	return pro_experts_list_in_review( array( 'post_type' => 'pro-experts', 'numberposts' => 5 ) );
+function pro_expert_finder_list() {
+	return pro_experts_finder_list_in_review( array( 'post_type' => 'pro-experts', 'numberposts' => 5 ) );
 }
 
 // Custom Post type title placeholder change.

@@ -1,9 +1,10 @@
 <?php 
 
+add_action( 'cmb2_admin_init', 'pro_expert_finder_metabox' );
 /**
  * Define the metabox and field configurations.
  */
-function proExpert_metabox_register() {
+function pro_expert_finder_metabox() {
 
 	/**
 	 * Initiate the metabox
@@ -64,7 +65,7 @@ function proExpert_metabox_register() {
 		'id'         => 'pro_expert_select_for_review',
         'type'       => 'select',
         'show_option_none' => true,
-        'options_cb' => 'pro_expert_photographer_list',
+        'options_cb' => 'pro_expert_finder_list',
 	) );
 	
 
@@ -77,4 +78,3 @@ function proExpert_metabox_register() {
 	) );
 
 }
-add_action( 'cmb2_admin_init', 'proExpert_metabox_register' );
