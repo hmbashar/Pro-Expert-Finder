@@ -31,7 +31,7 @@ function proexpert_create_post_type() {
                 'has_archive' => false,
                 'hierarchical' => false,
                 'capability_type' => 'page',
-                'rewrite' => array( 'slug' => 'professional-expert' ),
+                'rewrite' => array( 'slug' => 'pro-expert' ),
                 'supports' => array( 'title', 'editor', 'thumbnail' )
                 )
         );

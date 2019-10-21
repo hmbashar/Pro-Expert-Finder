@@ -33,6 +33,7 @@ define('WP_PRO_PLUGIN_DIR', plugin_dir_url( __FILE__ ));
 function pro_expert_finder_general() {
 
   load_plugin_textdomain( 'proexpert', false, WP_PRO_PLUGIN_PATH.'lang' );
+  add_image_size( 'proexpert-cover-photo', 540, 340, true );
 
 }
 add_action('after_setup_theme', 'pro_expert_finder_general');
@@ -61,7 +62,7 @@ function pro_expert_finder_script_enqueues() {
     wp_enqueue_style( 'wp-pro-expert-responsive-style', WP_PRO_PLUGIN_DIR.'assets/css/responsive.css', NULL, WP_PRO_EXPERT_VERSION);
     // Owl Carousel 
     wp_enqueue_script( 'owl-carousel', WP_PRO_PLUGIN_DIR.'assets/js/owl.carousel.min.js', array('jquery'), 2.3, true );
-    // jquery.Magnific-Popup
+    
     wp_enqueue_script( 'mixitup-js', WP_PRO_PLUGIN_DIR.'assets/js/mixitup.min.js', array('jquery'), 3.2, true );
 
     wp_enqueue_script( 'wp-pro-expert-custom', WP_PRO_PLUGIN_DIR.'assets/js/custom.js', array('jquery'), true );

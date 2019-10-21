@@ -35,26 +35,34 @@
 .single-pro-expert-photographer:hover .single-pro-expert-social{left:0; transition: 1s; }
 
 .single-pro-expert-photographer{box-shadow: 0 2px 25px 0 rgba(0,0,0,.15);overflow: hidden;margin-bottom: 30px;}
-.pro-expert-photographer-cover-photo{}
+.pro-expert-photographer-cover-photo{position: relative;}
 .pro-expert-photographer-cover-photo img{width:100%;max-height: 250px;}
 .pro-expert-photographer-client{
     position: absolute;
-    bottom: -35px;
+    bottom: 7px;
     left: 0;
     right: 0;
 }
 .pro-expert-photographer-full-thumb{
     position: relative;
 }
-.pro-expert-photographer-category p{margin:0;font-size: 16px;color: #fff;}
-.pro-expert-photographer-category{
+.pro-expert-photographer-category p, .pro-expert-finder-location p{margin:0;font-size: 13px;color: #fff;}
+.pro-expert-photographer-category, .pro-expert-finder-location{
     background-color: #2b7a78;
     padding: 10px 0px;
     border-radius: 2px;
-    text-align: center;
+    text-align: left;
 }
-.pro-expert-photographer-img{text-align: center;}
-.pro-expert-photographer-img img{max-width: 100%;width: 100px;height: 100px;border-radius: 100px;border: 2px solid #3aafa9;padding: 1px;margin-top: -14px;}
+.pro-expert-photographer-category p i, .pro-expert-finder-location p i {
+    margin-right:3px;
+}
+.pro-expert-photographer-img{text-align: center;position: absolute;left: 0;right: 0;width: 85px;margin: 0 auto;bottom: -40px;}
+.pro-expert-photographer-img img{border-radius: 100px;
+border: 2px solid #3aafa9;
+padding: 1px;
+margin-top: -14px;
+height: 80px;
+width: 80px;}
 .pro-expert-photographer-review{
     background-color: #2b7a78;
     padding: 10px 0px;

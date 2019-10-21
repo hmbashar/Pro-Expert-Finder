@@ -1,17 +1,9 @@
 (function($) {
    "use strict";  
 
+  $(document).ready(function(){
 
-// magnificPopup
-
-
-
-
-
-    $(document).ready(function(){
-
-
-var mixer = mixitup('.focal-portfolio-mix');
+    var mixer = mixitup('.focal-portfolio-mix');
 
 
       $('.focal-slider-content').owlCarousel({
@@ -57,14 +49,8 @@ var mixer = mixitup('.focal-portfolio-mix');
         });
 
 
+     
 
+    });  
 
-
-
-
-
-
-
-
-    });    
 })(jQuery);

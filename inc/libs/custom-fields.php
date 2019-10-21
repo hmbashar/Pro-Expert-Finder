@@ -49,6 +49,50 @@ function pro_expert_finder_metabox() {
 	/**
 	 * Initiate the metabox
 	 */
+	$pro_Experts_social_profile = new_cmb2_box( array(
+		'id'            => 'pro_expert_social_metabox_id',
+		'title'         => __( 'Social Information', 'proexpert' ),
+		'object_types'  => array( 'pro-experts' ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+	) );
+
+	// Regular text field
+	$pro_Experts_social_profile->add_field( array(
+		'name'       => __( 'Facebook', 'proexpert' ),
+		'desc'       => __( 'Please Input expert facebook profile url', 'proexpert' ),
+		'id'         => 'pro-experts-facebook-url',
+		'type'       => 'text_url',
+	) );
+	// Regular text field
+	$pro_Experts_social_profile->add_field( array(
+		'name'       => __( 'Twitter', 'proexpert' ),
+		'desc'       => __( 'Please Input expert twitter profile url', 'proexpert' ),
+		'id'         => 'pro-experts-twitter-url',
+		'type'       => 'text_url',
+	) );
+	// Regular text field
+	$pro_Experts_social_profile->add_field( array(
+		'name'       => __( 'LinkedIn', 'proexpert' ),
+		'desc'       => __( 'Please Input expert linkedIn profile url', 'proexpert' ),
+		'id'         => 'pro-experts-linkedin-url',
+		'type'       => 'text_url',
+	) );
+	// Regular text field
+	$pro_Experts_social_profile->add_field( array(
+		'name'       => __( 'Instagram', 'proexpert' ),
+		'desc'       => __( 'Please Input expert instagram profile url', 'proexpert' ),
+		'id'         => 'pro-experts-instagram-url',
+		'type'       => 'text_url',
+	) );
+
+
+
+
+	/**
+	 * Initiate the metabox
+	 */
 	$pro_expert_review = new_cmb2_box( array(
 		'id'            => 'pro_expert_review_metabox_id',
 		'title'         => __( 'Review For Professional Expert', 'proexpert' ),
