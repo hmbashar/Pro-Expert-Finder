@@ -79,4 +79,3 @@ require_once( WP_PRO_PLUGIN_PATH . 'inc/taxonomy.php' );
 require_once( WP_PRO_PLUGIN_PATH . 'inc/libs/class-tgm-plugin-activation.php' );
 require_once( WP_PRO_PLUGIN_PATH . 'inc/libs/tgm-configuration.php' );
 require_once( WP_PRO_PLUGIN_PATH . 'inc/libs/custom-fields.php' );
-
