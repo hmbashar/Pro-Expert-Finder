@@ -36,10 +36,10 @@ function proexpert_create_post_type() {
                 )
         );
         // Register post type for Review
-        register_post_type( 'review',
+        register_post_type( 'pro-expert-review',
                 array(
                         'labels' => array(
-                                'name' => __( 'Reviews', 'proexpert' ),
+                                'name' => __( 'Pro Reviews', 'proexpert' ),
                                 'singular_name' => __( 'Review', 'proexpert' ),
                                 'add_new' => __( 'Add New Review', 'proexpert' ),
                                 'add_new_item' => __( 'Add New Review', 'proexpert' ),
@@ -54,7 +54,7 @@ function proexpert_create_post_type() {
                 'has_archive' => false,
                 'hierarchical' => false,
                 'capability_type' => 'page',
-                'rewrite' => array( 'slug' => 'review' ),
+                'rewrite' => array( 'slug' => 'pro-review' ),
                 'supports' => array( 'title', 'editor')
                 )
         );

@@ -36,14 +36,14 @@ function pro_experts_finder_list_in_review( $query_args ) {
  * @return array An array of options that matches the CMB2 options array
  */
 function pro_expert_finder_list() {
-	return pro_experts_finder_list_in_review( array( 'post_type' => 'pro-experts', 'numberposts' => 5 ) );
+	return pro_experts_finder_list_in_review( array( 'post_type' => 'pro-experts', 'numberposts' => 15 ) );
 }
 
 // Custom Post type title placeholder change.
 function pro_experts_title_text( $title ){
     $screen = get_current_screen();
  
-    if  ( 'review' == $screen->post_type ) {
+    if  ( 'pro-expert-review' == $screen->post_type ) {
          $title = 'Client Name';
     }
 

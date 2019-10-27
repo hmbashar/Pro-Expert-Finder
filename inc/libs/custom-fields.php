@@ -7,6 +7,62 @@ add_action( 'cmb2_admin_init', 'pro_expert_finder_metabox' );
 function pro_expert_finder_metabox() {
 
 	/*-------------------------------------------
+	 * Slider metabox
+	 -------------------------------------------*/
+	$pro_Experts_slider = new_cmb2_box( array(
+		'id'            => 'pro_expert_slider_metabox_id',
+		'title'         => __( 'Slider', 'proexpert' ),
+		'object_types'  => array( 'pro-experts' ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		'closed'         => true, // true to have the groups closed by default
+	) );
+
+	$pro_expert_profession_slider = $pro_Experts_slider->add_field( array(
+	'id'          => 'pro_expert_profession_slider_group',
+	'type'        => 'group',
+	// 'repeatable'  => false, // use false if you want non-repeatable group
+	'options'     => array(
+		'group_title'       => __( 'Slider {#}', 'proexpert' ), // since version 1.1.4, {#} gets replaced by row number
+		'add_button'        => __( 'Add Another Slider', 'proexpert' ),
+		'remove_button'     => __( 'Remove Slider', 'proexpert' ),
+		'sortable'          => true,
+		'closed'         => true, // true to have the groups closed by default
+		'remove_confirm' => esc_html__( 'Are you sure you want to remove?', 'proexpert' ), // Performs confirmation before removing group.
+		),
+	) );
+
+
+	// Regular text field
+	$pro_Experts_slider->add_group_field($pro_expert_profession_slider, array(
+		'name'       => __( 'Slide Image', 'proexpert' ),
+		'desc'       => __( 'Please upload your slider image, recommended dimension full width like 1920px', 'proexpert' ),
+		'id'         => 'professional-expert-slider-image',
+		'type'       => 'file',
+	) );
+
+	// Regular text field
+	$pro_Experts_slider->add_group_field($pro_expert_profession_slider, array(
+		'name'       => __( 'Slider Text', 'proexpert' ),		
+		'id'         => 'professional-expert-slider-text',
+		'type'       => 'text',
+	) );
+	// Regular text field
+	$pro_Experts_slider->add_group_field($pro_expert_profession_slider, array(
+		'name'       => __( 'Learn Text', 'proexpert' ),		
+		'id'         => 'professional-expert-slider-learn-text',
+		'type'       => 'text',
+		'default'	=> 'Learn More',
+	) );
+	// Regular text field
+	$pro_Experts_slider->add_group_field($pro_expert_profession_slider, array(
+		'name'       => __( 'Learn URL', 'proexpert' ),		
+		'id'         => 'professional-expert-slider-learn-url',
+		'type'       => 'text_url',		
+	) );
+
+	/*-------------------------------------------
 	 * General the metabox
 	 -------------------------------------------*/
 	$pro_Experts = new_cmb2_box( array(
@@ -125,7 +181,7 @@ function pro_expert_finder_metabox() {
 	 --------------------------------------------*/
 	$pro_expert_value = new_cmb2_box( array(
 		'id'            => 'pro_expert_value_metabox_id',
-		'title'         => __( 'Value Information', 'proexpert' ),
+		'title'         => __( 'Value', 'proexpert' ),
 		'object_types'  => array( 'pro-experts' ), // Post type
 		'context'       => 'normal',
 		'priority'      => 'high',
@@ -201,7 +257,7 @@ function pro_expert_finder_metabox() {
 	// 'repeatable'  => false, // use false if you want non-repeatable group
 	'options'     => array(
 		'group_title'       => __( 'Skill {#}', 'proexpert' ), // since version 1.1.4, {#} gets replaced by row number
-		'add_button'        => __( 'Add Another skill', 'proexpert' ),
+		'add_button'        => __( 'Add Another Skill', 'proexpert' ),
 		'remove_button'     => __( 'Remove skill', 'proexpert' ),
 		'sortable'          => true,
 		'closed'         => true, // true to have the groups closed by default
@@ -226,12 +282,115 @@ function pro_expert_finder_metabox() {
 
 
 	/*-------------------------------------------
+	 * Resume metabox
+	 -------------------------------------------*/
+	$pro_expert_resume = new_cmb2_box( array(
+		'id'            => 'pro_expert_resume_metabox_id',
+		'title'         => __( 'Resume', 'proexpert' ),
+		'object_types'  => array( 'pro-experts' ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		'closed'         => true, // true to have the groups closed by default
+	) );
+	// Regular text field
+	$pro_expert_resume->add_field( array(
+		'name'       => __( 'Short Description', 'proexpert' ),
+		'desc'       => __( 'Please write something about this resume', 'proexpert' ),
+		'id'         => 'pro_expert-result-short-desc',
+        'type'       => 'textarea_small',
+	) );
+
+	// Regular text field
+	$pro_expert_resume->add_field( array(
+		'name'       => __( 'Download', 'proexpert' ),
+		'desc'       => __( 'Download url', 'proexpert' ),
+		'id'         => 'pro_expert_resume_download_url',
+		'type'       => 'text_url',
+	) );
+
+
+
+	/*-------------------------------------------
+	 * Education metabox
+	 -------------------------------------------*/
+	$pro_expert_education = new_cmb2_box( array(
+		'id'            => 'pro_expert_education_metabox_id',
+		'title'         => __( 'Education', 'proexpert' ),
+		'object_types'  => array( 'pro-experts' ), // Post type		
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		'closed'         => true, // true to have the groups closed by default
+	) );
+	// Regular text field
+	$pro_expert_education->add_field( array(
+		'name'       => __( 'Short Description', 'proexpert' ),
+		'desc'       => __( 'Please write something about this professional expert', 'proexpert' ),
+		'id'         => 'pro_expert-education-short-desc',
+        'type'       => 'wysiwyg',
+        'options' => array(
+            'media_buttons' => false,
+            'textarea_rows' => get_option('default_post_edit_rows', 5)
+        ),
+	) );
+	$pro_expert_education_group = $pro_expert_education->add_field( array(
+	'id'          => 'pro_expert_education_group',
+	'type'        => 'group',
+	 'repeatable'  => true, // use false if you want non-repeatable group
+	'options'     => array(
+		'group_title'       => __( 'Education {#}', 'proexpert' ), // since version 1.1.4, {#} gets replaced by row number
+		'add_button'        => __( 'Add Education', 'proexpert' ),
+		'remove_button'     => __( 'Remove Education', 'proexpert' ),
+		'sortable'          => true,
+		'closed'         => true, // true to have the groups closed by default
+		'remove_confirm' => esc_html__( 'Are you sure you want to remove?', 'proexpert' ), // Performs confirmation before removing group.
+		),
+	) );
+
+	// Id's for group's fields only need to be unique for the group. Prefix is not needed.
+	$pro_expert_education->add_group_field( $pro_expert_education_group, array(
+		'name' => 'Education Name',
+		'id'   => 'pro_expert_education_name',
+		'type' => 'text',		
+	) );
+
+	// Id's for group's fields only need to be unique for the group. Prefix is not needed.
+	$pro_expert_education->add_group_field( $pro_expert_education_group, array(
+		'name' => 'Collage Name',
+		'id'   => 'pro_expert_collage_name',
+		'type' => 'text',		
+	) );
+
+	// Id's for group's fields only need to be unique for the group. Prefix is not needed.
+	$pro_expert_education->add_group_field( $pro_expert_education_group, array(
+		'name' => 'Education Year',
+		'id'   => 'pro_expert_education_year',
+		'type' => 'text_date',		
+	) );
+	// Id's for group's fields only need to be unique for the group. Prefix is not needed.
+	$pro_expert_education->add_group_field( $pro_expert_education_group, array(
+		'name' => 'GPA',
+		'id'   => 'pro_expert_education_gpa',
+		'type' => 'text_small',		
+	) );
+
+	// Id's for group's fields only need to be unique for the group. Prefix is not needed.
+	$pro_expert_education->add_group_field( $pro_expert_education_group, array(
+		'name' => 'GPA',
+		'id'   => 'pro_expert_education_desc',
+		'type' => 'textarea_small',		
+	) );
+
+
+
+	/*-------------------------------------------
 	 * Review metabox
 	 -------------------------------------------*/
 	$pro_expert_review = new_cmb2_box( array(
 		'id'            => 'pro_expert_review_metabox_id',
 		'title'         => __( 'Review For Professional Expert', 'proexpert' ),
-		'object_types'  => array( 'review' ), // Post type
+		'object_types'  => array( 'pro-expert-review' ), // Post type
 		'context'       => 'normal',
 		'priority'      => 'high',
 		'show_names'    => true, // Show field names on the left
